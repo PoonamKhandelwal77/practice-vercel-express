@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <title>My page</title>
+</head>
+<body>
+    <h1>List of users</h1>
+   
+
+    <table border="1">
+        <tr>
+            <td>sno</td>
+            <td>name</td>
+            <td>MRP</td>
+            <td>Desc</td>
+        
+        </tr>
+
+        {{#each item}}
+        <tr>
+            <td>{{this._id}}</td>
+            <td>{{this.Name}}</td>
+            <td>{{this.MRP}}</td>
+            <td>{{this.desc}}</td>
+            <td><button>edit</button></td>
+            <td><button> Delete </button> </td>
+        </tr>
+        {{/each}}
+    </table>
+
+<BUTTON>LOGOUT</BUTTON>
+
+    <script src="C:\Users\poona\OneDrive\Desktop\practiceAPI\expressFolder\src\views\templates\script.js">
+        
+    </script>
+</body>
+</html>

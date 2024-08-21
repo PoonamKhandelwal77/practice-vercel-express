@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form method="post" action="/api/user">
+        <input type="text" name="UserId">
+        <input type="text" name="Name">
+        <input type="date" name="Birthday">
+        <input type="text" name="Address">
+        <input type="text" name="password">
+        <input type="password" name="cPassword">
+        {{msg}}
+<button type="submit">submit</button>
+    </form>
+</body>
+</html>
