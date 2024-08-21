@@ -33,8 +33,8 @@ app.use('/api/item',itemRouter)
 app.use("/api/user",userRouter) 
 
 app.get('/',(req,res)=>{
-    // res.send('helloo from deployment')
-    res.render('login')
+    res.send('helloo from deployment')
+    // res.render('login')
 })
 
 app.listen(port,()=>{
