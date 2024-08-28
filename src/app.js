@@ -29,7 +29,7 @@ app.set('views',template_path)
 
 hbs.registerPartials(partials_path)
 
-app.use('/api/item',itemRouter)
+//app.use('/api/item',itemRouter)
 app.use("/api/user",userRouter) 
 
 app.get('/',(req,res)=>{
